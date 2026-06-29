@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GoGreen Corporation LLP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f8f2;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#1e5631;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#fff;
+}
+
+.logo span{
+    color:#c49a6c;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#d8b384;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:850px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 40px;
+    background:#8B5A2B;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#1e5631;
+}
+
+/* Sections */
+
+section{
+    padding:80px 8%;
+}
+
+h2{
+    text-align:center;
+    color:#1e5631;
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+.about p{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#1e5631;
+    margin-bottom:15px;
+}
+
+/* Advantages */
+
+.advantages{
+    background:#eef6ea;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.icon{
+    font-size:45px;
+}
+
+.feature h3{
+    margin:15px 0;
+    color:#1e5631;
+}
+
+/* Contact */
+
+.contact{
+    background:#1e5631;
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    color:white;
+}
+
+.contact p{
+    margin:12px;
+}
+
+footer{
+    background:#153d22;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+h2{
+    font-size:32px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+Go<span>Green</span>
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#advantages">Advantages</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Building the Future with Bamboo</h1>
+
+<p>
+
+GoGreen Corporation LLP manufactures premium Engineered Bamboo Plywood,
+providing sustainable alternatives to traditional timber.
+Our products are stronger, eco-friendly, elegant, and built to last.
+
+</p>
+
+<a href="#about" class="btn">Learn More</a>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section class="about" id="about">
+
+<h2>About GoGreen</h2>
+
+<p>
+
+GoGreen Corporation LLP is committed to transforming the construction
+and furniture industries with innovative Engineered Bamboo Plywood.
+Using advanced manufacturing technology, we create products that are
+stronger than conventional wood while preserving forests and reducing
+carbon emissions.
+
+Our vision is to build a greener future where sustainable materials
+become the first choice for homes, offices, commercial buildings,
+and modern infrastructure.
+
+</p>
+
+</section>
+
+<!-- Products -->
+
+<section id="products">
+
+<h2>Our Products</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Engineered Bamboo Plywood</h3>
+<p>
+Premium bamboo boards suitable for furniture, cabinets,
+modular kitchens and interiors.
+</p>
+</div>
+
+<div class="card">
+<h3>Structural Bamboo Panels</h3>
+<p>
+Heavy-duty panels designed for construction,
+flooring, roofing and wall applications.
+</p>
+</div>
+
+<div class="card">
+<h3>Customized Bamboo Solutions</h3>
+<p>
+Special sizes, thicknesses and finishes
+available according to project requirements.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Advantages -->
+
+<section class="advantages" id="advantages">
+
+<h2>Why Choose Bamboo?</h2>
+
+<div class="features">
+
+<div class="feature">
+<div class="icon">🌿</div>
+<h3>100% Sustainable</h3>
+<p>Bamboo regenerates naturally and protects forests.</p>
+</div>
+
+<div class="feature">
+<div class="icon">🏠</div>
+<h3>High Strength</h3>
+<p>Denser and stronger than many hardwood species.</p>
+</div>
+
+<div class="feature">
+<div class="icon">❄️</div>
+<h3>Natural Insulation</h3>
+<p>Keeps interiors cooler during summer and warmer during winter.</p>
+</div>
+
+<div class="feature">
+<div class="icon">💧</div>
+<h3>Moisture Resistant</h3>
+<p>Excellent dimensional stability and durability.</p>
+</div>
+
+<div class="feature">
+<div class="icon">♻️</div>
+<h3>Eco Friendly</h3>
+<p>Lower carbon footprint than conventional timber.</p>
+</div>
+
+<div class="feature">
+<div class="icon">✨</div>
+<h3>Premium Finish</h3>
+<p>Natural appearance suitable for luxury interiors.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>GoGreen Corporation LLP</strong></p>
+
+<p>Engineered Bamboo Plywood Manufacturer</p>
+
+<p>Email : info@gogreen.com</p>
+
+<p>Phone : +91 XXXXX XXXXX</p>
+
+<a href="#" class="btn">Send Inquiry</a>
+
+</section>
+
+<footer>
+
+© 2026 GoGreen Corporation LLP • Building a Sustainable Future
+
+</footer>
+
+</body>
+</html>
